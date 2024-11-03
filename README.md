@@ -30,3 +30,22 @@ car_data = {
 # Predict price
 price = CarPricePredictor.predict(car_data)
 print(f"Estimated Price: ${price}")
+## 📈 Model Performance
+- **Event Outcome**: First place in accuracy
+- **Validation Metrics**: Demonstrates high precision and low error rate, ideal for real-world applications
+
+## 🤖 Technologies Used
+- **Machine Learning**: Random Forest algorithm (Scikit-Learn)
+- **Data Processing**: Pandas, NumPy
+- **Other**: Matplotlib for visualizing results (if relevant)
+
+## 💡 Future Improvements
+- Adding more features for even higher accuracy
+- Experimenting with deep learning models for improved performance
+- Expanding the dataset to cover a wider variety of car makes and models
+
+## 🤝 Contributing
+Contributions are welcome! Please feel free to submit a pull request or open an issue to suggest improvements.
+
+## 🏆 Acknowledgments
+This project was developed for a competitive event, where it ranked **first in accuracy** among all submissions. Special thanks to the event organizers and all contributors!
