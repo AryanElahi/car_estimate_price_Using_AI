@@ -34,20 +34,3 @@ Contributions are welcome! Please feel free to submit a pull request or open an 
 ## 🏆 Acknowledgments
 This project was developed for a competitive event, where it ranked **first in accuracy** among all submissions. Special thanks to the event organizers and all contributors!
 
-
-## 📊 Example Usage
-```python
-from model import CarPricePredictor
-
-# Sample input
-car_data = {
-    "model": "Toyota Camry",
-    "year": 2018,
-    "mileage": 30000,
-    "condition": "Good",
-    "location": "California"
-}
-
-# Predict price
-price = CarPricePredictor.predict(car_data)
-print(f"Estimated Price: ${price}")
