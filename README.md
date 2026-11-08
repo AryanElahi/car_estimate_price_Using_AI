@@ -1,36 +1,23 @@
-# 🚗 Car Price Estimation Using AI 🧠
+# Car Price Prediction
 
-This project features a powerful AI-driven model designed to accurately estimate car prices based on various attributes like model, year, mileage, and more. Built for a competitive event, this project achieved **first place in accuracy**, proving its reliability and precision in predicting car values.
+Final project of the 90-hour **Introductory AI & Data Science Course** (University of Kurdistan & Islamic Azad University of Sanandaj), September 2024. Three-person team; I led it.
 
-## 🎯 Key Features
-- **High Accuracy**: Achieved first place in a competitive event for accuracy in price predictions.
-- **Comprehensive Feature Set**: Takes into account key attributes such as model, year, mileage, condition, and location.
-- **AI-Powered with Random Forest**: Utilizes the Random Forest algorithm for reliable and fast predictions.
-- **Easy Integration**: Ideal for use in car marketplaces, dealerships, and individual valuation tools.
+- 🥇 **1st place** in the course project, with a scholarship
+- Commended at **Research Week**, Islamic Azad University of Sanandaj (December 2024)
 
-## 🔧 How It Works
-1. **Data Collection**: Aggregates data on car specifications, including make, model, year, and mileage.
-2. **Data Processing**: Cleans and processes data, transforming it into features that enhance model performance.
-3. **Model Training**: Trains a Random Forest model for price prediction.
-4. **Prediction**: Based on input parameters, the model outputs an estimated price, providing a reliable valuation.
+## Result
+- **R² ≈ 0.97**: mean 8-fold cross-validation score of the final Random Forest pipeline (`final releas.ipynb`)
 
-## 📈 Model Performance
-- **Event Outcome**: First place in accuracy
-- **Validation Metrics**: Demonstrates high precision and low error rate, ideal for real-world applications
+The event ranked teams by a combined score, ((1 − median absolute percentage error) + R²) / 2. An earlier version of this README called that score "accuracy"; it isn't, and R² is the number to quote.
 
-## 🤖 Technologies Used
-- **Machine Learning**: Random Forest algorithm (Scikit-Learn)
-- **Data Processing**: Pandas, NumPy
-- **Other**: Matplotlib for visualizing results (if relevant)
+## Approach
+1. Clean the listings data and encode categorical features (title, transmission, body and interior colour, body status and type, …) with one-hot encoding; scale numeric features.
+2. Train a **Random Forest** regressor in a scikit-learn pipeline, tuned with grid search and 8-fold cross-validation.
+3. Compare with **HistGradientBoosting** and a small neural network.
 
-## 💡 Future Improvements
-- Adding more features for even higher accuracy
-- Experimenting with deep learning models for improved performance
-- Expanding the dataset to cover a wider variety of car makes and models
+## Files
+- `first version.ipynb`: exploration and first models
+- `final releas.ipynb`: final pipeline and submission
 
-## 🤝 Contributing
-Contributions are welcome! Please feel free to submit a pull request or open an issue to suggest improvements.
-
-## 🏆 Acknowledgments
-This project was developed for a competitive event, where it ranked **first in accuracy** among all submissions. Special thanks to the event organizers and all contributors!
-
+## Stack
+Python · pandas · NumPy · scikit-learn · Matplotlib
